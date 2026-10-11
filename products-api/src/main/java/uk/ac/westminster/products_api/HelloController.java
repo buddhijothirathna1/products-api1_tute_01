@@ -13,6 +13,6 @@ public class HelloController {
     }
     @GetMapping("/status")
     public String status() {
-        return "API is running — Tutorial 1";
+        return "API is running — Tutorial 1 | Date: " + java.time.LocalDate.now().toString();
     }
 }
